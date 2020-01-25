@@ -1,1 +1,4 @@
-<app-editor></app-editor>
+<div class="toolbar">
+    <input type="range" [(ngModel)]="zoom" min="1" max="5" step="0.1">
+</div>
+<app-editor [style.zoom]="zoom"></app-editor>

@@ -1,0 +1,7 @@
+<div *ngFor="let column of row.columns">
+    <ng-container *ngFor="let item of column.content">
+        <app-paragraph *ngIf="item.type === 'p'">{{ item.text }}</app-paragraph>
+        <app-header *ngIf="isHeader(item.type)" [text]="item.text" [type]="item.type"></app-header>
+    </ng-container>
+</div>
+

@@ -1,6 +1,5 @@
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sint modi ipsam natus odio quisquam commodi voluptas excepturi quam eveniet aliquid et quis asperiores omnis neque, optio odit cupiditate ipsa.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sint modi ipsam natus odio quisquam commodi voluptas excepturi quam eveniet aliquid et quis asperiores omnis neque, optio odit cupiditate ipsa.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sint modi ipsam natus odio quisquam commodi voluptas excepturi quam eveniet aliquid et quis asperiores omnis neque, optio odit cupiditate ipsa.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sint modi ipsam natus odio quisquam commodi voluptas excepturi quam eveniet aliquid et quis asperiores omnis neque, optio odit cupiditate ipsa.</p>
+<app-row *ngFor="let row of rows$ | async" [row]="row"></app-row>
 
-<app-section></app-section>
+<div class="edit">
+    <div class="fas fa-plus add" (click)="addRow()"></div>
+</div>
